@@ -1,0 +1,25 @@
+@import './color';
+
+//Global
+body{
+  background:$color6;
+  padding:0;
+  margin:0;
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.clear{
+  clear: both;
+}
+
+@import './header';
+@import './showcase';
+@import './about';
+@import './games'

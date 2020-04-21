@@ -1,0 +1,19 @@
+#about{
+  height: 130px;
+  text-align: none;
+  background: $color5;
+  border-bottom:solid 1px $color2;
+  p{
+    font-size: 25px;
+    margin: 20px 0 10px 0;
+  }
+  a{
+    line-height: 1.7em;
+    text-decoration: none;
+    border:solid 2px $color1;
+    border-radius: 2px;
+    padding:2px 5px;
+    font-weight: bolder;
+    
+  }
+}

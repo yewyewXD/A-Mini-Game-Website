@@ -1,0 +1,55 @@
+@media(min-width:360px){
+  header{
+    height: 50px;
+    background: white;
+    #branding{
+      float:left;
+      margin-top:5px;
+      img{
+        height: 50px;
+        width: 50px;
+        float:left;
+      }
+      h1{
+        padding-top:3px;
+        font-size: 30px;
+        margin:5px 0 0 0;
+        float:right;
+      }
+    }
+
+    nav{
+      float:right;
+      font-size: 30px;
+      margin:8px 5px 0 0;
+    }
+
+    #overlay{
+      width: 100%;
+      position:fixed;
+      top: 0px;
+      background:$color1;
+      text-align: center;
+      height: 0px;
+      transition: 0.5s;
+      color:white;
+      font-weight: bolder;
+      #closebtn{
+        position: absolute;
+        right: 20px;
+        font-size:40px;
+        display:none;
+      }
+      ul{
+        display: none;
+        list-style: none;
+        padding: 0;
+        a{
+          text-decoration: none;
+          color:white;
+          line-height: 2em;
+        }
+      }
+    }
+  }
+}

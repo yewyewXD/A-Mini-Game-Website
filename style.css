@@ -1,0 +1,137 @@
+body {
+  background: #dbdef5;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+@media (min-width: 360px) {
+  header {
+    height: 50px;
+    background: white;
+  }
+  header #branding {
+    float: left;
+    margin-top: 5px;
+  }
+  header #branding img {
+    height: 50px;
+    width: 50px;
+    float: left;
+  }
+  header #branding h1 {
+    padding-top: 3px;
+    font-size: 30px;
+    margin: 5px 0 0 0;
+    float: right;
+  }
+  header nav {
+    float: right;
+    font-size: 30px;
+    margin: 8px 5px 0 0;
+  }
+  header #overlay {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background: #6078ea;
+    text-align: center;
+    height: 0px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: white;
+    font-weight: bolder;
+  }
+  header #overlay #closebtn {
+    position: absolute;
+    right: 20px;
+    font-size: 40px;
+    display: none;
+  }
+  header #overlay ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+  }
+  header #overlay ul a {
+    text-decoration: none;
+    color: white;
+    line-height: 2em;
+  }
+}
+
+@media (min-width: 360px) {
+  #showcase {
+    text-align: center;
+    height: 220px;
+    font-size: 25px;
+    border-bottom: 1px solid #909fee;
+  }
+  #showcase h1 {
+    margin-bottom: 20px;
+  }
+  #showcase a {
+    color: white;
+    font-weight: bold;
+    line-height: 2em;
+    padding: 1px 5px;
+    border: solid 5px #6078ea;
+    border-radius: 5px;
+    background: #6078ea;
+    text-decoration: none;
+  }
+  #showcase img {
+    position: absolute;
+    left: 80px;
+    z-index: -1;
+    top: 115px;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+#about {
+  height: 130px;
+  text-align: none;
+  background: #c2c9f3;
+  border-bottom: solid 1px #909fee;
+}
+
+#about p {
+  font-size: 25px;
+  margin: 20px 0 10px 0;
+}
+
+#about a {
+  line-height: 1.7em;
+  text-decoration: none;
+  border: solid 2px #6078ea;
+  border-radius: 2px;
+  padding: 2px 5px;
+  font-weight: bolder;
+}
+
+#games {
+  text-align: center;
+}
+
+#games h1 {
+  margin-bottom: 0;
+}
+
+#games hr {
+  width: 200px;
+  border: 1px solid #9dabef;
+}
+/*# sourceMappingURL=style.css.map */
