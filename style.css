@@ -134,4 +134,25 @@ body {
   width: 200px;
   border: 1px solid #9dabef;
 }
+
+#games #boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#games .box {
+  border: solid 1px black;
+  width: 70%;
+}
 /*# sourceMappingURL=style.css.map */

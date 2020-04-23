@@ -15,7 +15,7 @@ openbtn.addEventListener('click', () => {
     closebtn.style.display = 'inline';
     overlist.style.display = 'block';
   }, 300)
-})
+});
 
 
 
