@@ -1,6 +1,11 @@
 @import './color';
 
 //Global
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
 body{
   background:$color6;
   padding:0;
@@ -12,7 +17,7 @@ body{
 .container{
   width: 90%;
   margin: auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .clear{

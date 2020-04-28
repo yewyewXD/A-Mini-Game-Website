@@ -1,3 +1,4 @@
+//global settings
 overlay = document.getElementById('overlay');
 closebtn = document.getElementById('closebtn');
 overlist = document.getElementById('overlay-list');
@@ -16,6 +17,11 @@ openbtn.addEventListener('click', () => {
     overlist.style.display = 'block';
   }, 300)
 });
+
+branding = document.getElementById('branding');
+branding.addEventListener('click', () => {
+  location.href = 'home.html';
+})
 
 
 
