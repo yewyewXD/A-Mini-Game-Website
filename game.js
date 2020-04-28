@@ -23,5 +23,19 @@ branding.addEventListener('click', () => {
   location.href = 'home.html';
 })
 
+//home-page-games
+document.getElementById('tictac').
+  addEventListener('click', () => {
+    console.log('tictac');
+  })
 
+document.getElementById('rockpaper').
+  addEventListener('click', () => {
+    console.log('rockpaper');
+  })
+
+document.getElementById('maze').
+  addEventListener('click', () => {
+    console.log('maze');
+  })
 
