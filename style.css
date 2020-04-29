@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  overflow-y: scroll;
 }
 
 body {
@@ -9,12 +8,12 @@ body {
   margin: 0;
   font-size: 18px;
   font-family: 'Josefin Sans', sans-serif;
+  overflow: hidden;
 }
 
 .container {
   width: 90%;
   margin: auto;
-  overflow-x: hidden;
 }
 
 .clear {
@@ -24,6 +23,7 @@ body {
 @media (min-width: 360px) {
   header {
     height: 50px;
+    width: 100%;
     background: white;
   }
   header #branding {
