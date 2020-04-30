@@ -1,5 +1,7 @@
 @media(min-width:360px){
   #showcase{
+    background: url('logo.png') no-repeat 50% 65px;
+    background-size: 200px 200px;
     text-align: center;
     height: 220px;
     font-size: 25px;
@@ -16,14 +18,6 @@
       border-radius: 5px;
       background: $color1;
       text-decoration: none;
-    }
-    img{
-      position: absolute;
-      left:80px;
-      z-index: -1;
-      top:115px;
-      height: 200px;
-      width: 200px;
     }
   }
 }

@@ -3,7 +3,7 @@
 }
 
 :root{
-  --cell-size:100px;
+  --cell-size:80px;
   --mark-size: calc(var(--cell-size) * .9);
 }
 
@@ -110,7 +110,7 @@ body{
 .board.circle .cell:not(.x):not(.circle):hover::after{
   width: calc(var(--mark-size) * .7);
   height:  calc(var(--mark-size) * .7);
-  background: white;
+  background: #dbdef5;
 }
 
 .winning-message{
@@ -120,11 +120,13 @@ body{
   left: 0;
   right: 0;
   bottom:0;
-  background: rgba(0,0,0,.9);
+  background:#6078ea;
+  opacity: 0.9;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 5rem;
+  font-weight: bold;
   flex-direction: column;
 }
 
@@ -137,7 +139,7 @@ body{
 }
 
 .winning-message button:hover{
-  background: black;
+  background: #909fee;
   border-color: white;
   color:white;
 }

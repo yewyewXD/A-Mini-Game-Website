@@ -8,12 +8,12 @@ body {
   margin: 0;
   font-size: 18px;
   font-family: 'Josefin Sans', sans-serif;
-  overflow: hidden;
 }
 
 .container {
   width: 90%;
   margin: auto;
+  overflow: hidden;
 }
 
 .clear {
@@ -57,6 +57,7 @@ body {
     transition: 0.5s;
     color: white;
     font-weight: bolder;
+    z-index: 1;
   }
   header #overlay #closebtn {
     position: absolute;
@@ -72,12 +73,14 @@ body {
   header #overlay ul a {
     text-decoration: none;
     color: white;
-    line-height: 2em;
+    line-height: 2.3em;
   }
 }
 
 @media (min-width: 360px) {
   #showcase {
+    background: url("logo.png") no-repeat 50% 65px;
+    background-size: 200px 200px;
     text-align: center;
     height: 220px;
     font-size: 25px;
@@ -95,14 +98,6 @@ body {
     border-radius: 5px;
     background: #6078ea;
     text-decoration: none;
-  }
-  #showcase img {
-    position: absolute;
-    left: 80px;
-    z-index: -1;
-    top: 115px;
-    height: 200px;
-    width: 200px;
   }
 }
 

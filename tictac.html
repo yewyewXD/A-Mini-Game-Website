@@ -8,11 +8,39 @@
   <meta name="keywords" content="mini game, arcade, simple, fun, play">
   <meta name="author" content="yewyewXD">
   <title>Mini Word | Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="tictac.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <img src="logo.png" alt="website logo">
+        <h1>Mini World</h1>
+      </div>
+      <nav>
+        <span id="openbtn">&equiv;</span>
+      </nav>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="overlay">
+      <span id="closebtn">&times;</span>
+      <ul id="overlay-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="home.html#games">More Games</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="clear"></div>
+
+
   <div class="board" id="board">
     <div class="cell" data-cell></div>
     <div class="cell" data-cell></div>
@@ -30,6 +58,11 @@
     <button id="restartButton">Restart</button>
   </div>
 
+  <footer>
+    <p>Mini World &copy; 2020 by yewyewXD | All Rights Reserved</p>
+  </footer>
+
+  <script src="global.js"></script>
   <script src="tictac.js"></script>
 </body>
 
