@@ -7,7 +7,7 @@ document.getElementById('tictac').
 
 document.getElementById('rockpaper').
   addEventListener('click', () => {
-    console.log('rockpaper');
+    location.href = 'rockpaper.html'
   })
 
 document.getElementById('maze').
