@@ -1,0 +1,50 @@
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-head h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.form-head hr {
+  margin: auto;
+  width: 100px;
+  border: 1px solid #909fee;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin: 15px 0;
+}
+label {
+  display: block;
+}
+
+form input {
+  height: 20px;
+}
+
+form select {
+  height: 27px;
+  padding-right: 50px;
+}
+
+form button {
+  padding: 5px 10px;
+  border: none;
+  font-size: 15px;
+  color: white;
+  background: #6078ea;
+  border-radius: 3px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

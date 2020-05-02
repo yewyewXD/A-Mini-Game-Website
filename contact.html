@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Word | About</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
       rel="stylesheet"
     />
-    <style>
-      label {
-        display: block;
-      }
-    </style>
   </head>
 
   <body>
@@ -43,42 +39,40 @@
 
     <div class="clear"></div>
 
-    <div class="container">
-      <form>
-        <div class="form-group">
-          <label>Email address</label>
-          <input type="email" placeholder="name@example.com" />
-        </div>
-        <div>
-          <label>Email address</label>
-          <input type="email" placeholder="name@example.com" />
-        </div>
-        <div class="form-group">
-          <label>Example select</label>
-          <select class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Example multiple select</label>
-          <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Example textarea</label>
-          <textarea class="form-control" rows="3"></textarea>
-        </div>
-      </form>
+    <div class="form-head">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <hr />
+      </div>
     </div>
+
+    <form>
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="name" placeholder="Enter your name..." required />
+      </div>
+      <div class="form-group">
+        <label>Email address:</label>
+        <input type="email" placeholder="name@example.com" required />
+      </div>
+      <div class="form-group">
+        <label>Your topic:</label>
+        <select>
+          <option>Need help</option>
+          <option>Giving suggestion</option>
+          <option>Contact us</option>
+          <option>Question</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Your message:</label>
+        <textarea class="form-control" cols="23" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit now</button>
+      </div>
+    </form>
 
     <footer>
       <p>Mini World &copy; 2020 by yewyewXD | All Rights Reserved</p>
