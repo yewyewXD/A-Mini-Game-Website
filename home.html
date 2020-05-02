@@ -1,92 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="We build, we play, we have fun." />
+    <meta name="keywords" content="mini game, arcade, simple, fun, play" />
+    <meta name="author" content="yewyewXD" />
+    <title>Mini Word | Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="We build, we play, we have fun.">
-  <meta name="keywords" content="mini game, arcade, simple, fun, play">
-  <meta name="author" content="yewyewXD">
-  <title>Mini Word | Home</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div id="branding">
-        <img src="logo.png" alt="website logo">
-        <h1>Mini World</h1>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <img src="logo.png" alt="website logo" />
+          <h1>Mini World</h1>
+        </div>
+        <nav>
+          <span id="openbtn">&equiv;</span>
+        </nav>
       </div>
-      <nav>
-        <span id="openbtn">&equiv;</span>
-      </nav>
-    </div>
+
+      <div class="clear"></div>
+
+      <div id="overlay">
+        <span id="closebtn">&times;</span>
+        <ul id="overlay-list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="home.html#games">Games</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
 
     <div class="clear"></div>
 
-    <div id="overlay">
-      <span id="closebtn">&times;</span>
-      <ul id="overlay-list">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="home.html#games">Games</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+    <section id="showcase">
+      <div class="container">
+        <h1>Welcome To The Mini Game World</h1>
+        <a href="#games">Get Started</a>
+        <!-- <img src="logo.png" alt="website logo"> -->
+      </div>
+    </section>
 
-  <div class="clear"></div>
+    <section id="about">
+      <div class="container">
+        <p>Are you curious about our background, passion & more?</p>
+        <a href="about.html">About Us</a>
+      </div>
+    </section>
 
-  <section id="showcase">
-    <div class="container">
-      <h1>Welcome To The Mini Game World</h1>
-      <a href="#games">Get Started</a>
-      <!-- <img src="logo.png" alt="website logo"> -->
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <p>Are you curious about our background, passion & more?</p>
-      <a href="about.html">About Us</a>
-    </div>
-  </section>
-
-  <section id="games">
-    <div class="container">
-      <h1>Choose your desired game!</h1>
-      <hr>
-      <div id="boxes">
-        <div class="box">
-          <div id="tictac">
-            <img src="tictac.png" alt="tictactoe">
-            <p>Tic Tac Toe</p>
+    <section id="games">
+      <div class="container">
+        <h1>Choose your desired game!</h1>
+        <hr />
+        <div id="boxes">
+          <div class="box">
+            <div id="tictac">
+              <img src="tictac.png" alt="tictactoe" />
+              <p>Tic Tac Toe</p>
+            </div>
           </div>
-        </div>
-        <div class="box">
-          <div id="rockpaper">
-            <img src="rockpaper.png" alt="rockpaperscissor">
-            <p>Rock Paper Scissors</p>
+          <div class="box">
+            <div id="rockpaper">
+              <img src="rockpaper.png" alt="rockpaperscissor" />
+              <p>Rock Paper Scissors</p>
+            </div>
           </div>
-        </div>
-        <div class="box">
-          <div id="maze">
-            <img src="maze.png" alt="maze">
-            <p>The Maze</p>
+          <div class="box">
+            <div id="maze">
+              <img src="maze.png" alt="maze" />
+              <p>The Maze</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>Mini World &copy; 2020 by yewyewXD | All Rights Reserved</p>
-  </footer>
+    <footer>
+      <p>Mini World &copy; 2020 by yewyewXD | All Rights Reserved</p>
+    </footer>
 
-  <script src="global.js"></script>
-  <script src="game.js"></script>
-</body>
-
+    <script src="global.js"></script>
+    <script src="game.js"></script>
+  </body>
 </html>

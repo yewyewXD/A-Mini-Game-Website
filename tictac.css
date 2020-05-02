@@ -1,4 +1,4 @@
-@media(max-width:360px){
+@media(min-width:360px){
 table {
 	border-collapse: collapse;
   position: absolute;
@@ -7,7 +7,7 @@ table {
 }
 
 td {
-	border:  2px solid #333;
+	border: 2px solid #333;
 	height: 60px;
 	width:  60px;
 	text-align:  center;
@@ -58,8 +58,14 @@ table tr td:last-child {
   font-weight: bold;
   font-size: 30px;
   border-radius: 5px;
-  border: 2px solid black;
+  border: 1px solid black;
   background: white;
   outline: none;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 }

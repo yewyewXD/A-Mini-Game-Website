@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* The Modal (background) */
+.modal {
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #6078ea;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* Modal Content */
+
+.modal-header {
+  margin: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+.modal-footer {
+  padding: 5px 10px;
+  background: white;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.reloadBtn {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+#reload-btn {
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+@media (min-width: 360px) {
+  /*before end*/
+  #wrapper {
+    margin: auto;
+  }
+
+  #heading h1 {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+  }
+
+  #heading hr {
+    width: 150px;
+    margin: auto;
+  }
+
+  #advice {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  #c {
+    background: #eeeeee;
+    display: block;
+    height: 25px;
+    font-size: 25px;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  #canvas {
+    background: #dbdef5;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+  #timerel {
+    background: #eeeeee;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    height: 25px;
+    padding: 5px 0;
+  }
+
+  /*after end*/
+  .modal {
+    font-size: 23px;
+  }
+}
