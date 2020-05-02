@@ -11,3 +11,7 @@ document.getElementById("rockpaper").addEventListener("click", () => {
 document.getElementById("maze").addEventListener("click", () => {
   location.href = "maze.html";
 });
+
+document.getElementById("snake").addEventListener("click", () => {
+  location.href = "snake.html";
+});
