@@ -1,18 +1,20 @@
-#about{
+#about {
   height: 130px;
   text-align: none;
   background: $color5;
-  border-bottom:solid 1px $color2;
-  p{
+  border-bottom: solid 1px $color2;
+  p {
     font-size: 25px;
     margin: 20px 0 10px 0;
   }
-  a{
+  a {
     line-height: 1.7em;
     text-decoration: none;
-    border:solid 2px $color1;
-    border-radius: 2px;
-    padding:2px 5px;
+    padding: 10px 15px;
+    background: $color2;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
     font-weight: bolder;
   }
 }

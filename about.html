@@ -1,72 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Word | About</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      p {
+        padding: 15px;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini Word | About</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div id="branding">
-        <img src="logo.png" alt="website logo">
-        <h1>Mini World</h1>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <img src="logo.png" alt="website logo" />
+          <h1>Mini World</h1>
+        </div>
+        <nav>
+          <span id="openbtn">&equiv;</span>
+        </nav>
       </div>
-      <nav>
-        <span id="openbtn">&equiv;</span>
-      </nav>
-    </div>
+
+      <div class="clear"></div>
+
+      <div id="overlay">
+        <span id="closebtn">&times;</span>
+        <ul id="overlay-list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="home.html#games">Games</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
 
     <div class="clear"></div>
 
-    <div id="overlay">
-      <span id="closebtn">&times;</span>
-      <ul id="overlay-list">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="home.html#games">Games</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div class="container">
+      <article style="font-size: 20px;">
+        <h1 style="text-align: center; margin: 20px 0 5px 0; font-size: 40px;">
+          About Us
+        </h1>
+        <hr style="margin: auto; border: solid 1px #909fee; width: 130px;" />
+        <p style="background: #c2c9f3;">
+          Hi everyone on Mini World! I'm the author of this website, a front-end
+          web developer, a programmer and a hobbyist.
+        </p>
+        <p>
+          I'm glad that you're interested in the origin of our mini game
+          website! This simple-themed website was made for time killing and
+          mainly for fun.
+        </p>
+
+        <p style="background: #c2c9f3;">
+          Everything on this website was built from scratch with a bunch of
+          codes. Development languages include the basics of front-end dev like
+          HTML, CSS, SASS and JavaScript.
+        </p>
+
+        <p>
+          During my free times, I make websites for blogging and advertising but
+          mostly for fun. If you want to see more website like this, or you have
+          any idea that you want to share, feel free to shoot me a message
+          <a href="#contact">here</a>.
+        </p>
+      </article>
     </div>
-  </header>
 
-  <div class="clear"></div>
+    <footer>
+      <p>Mini World &copy; 2020 by yewyewXD | All Rights Reserved</p>
+    </footer>
 
-  <div class="container">
-    <article style="font-size:20px;">
-      <h1 style="text-align: center; margin: 10px 0 0 0;">About</h1>
-      <hr style="margin:0; border-top: solid 1px white;">
-      <p style="background:#c2c9f3;">
-        Hi everyone on Mini World! I'm the author of this website, a front-end web developer, a programmer and a
-        hobbyist.
-      </p>
-      <p>
-        I'm glad that you're interested in the origin of our mini game website! This simple-themed website was
-        made for time killing and mainly for fun.
-      </p>
-
-      <p style="background:#c2c9f3;">
-        Everything on this website was built from scratch with a bunch of codes. Development languages include the
-        basics of front-end dev like HTML, CSS, SASS and JavaScript.
-      </p>
-
-      <p>
-        During my free times, I make websites for blogging and advertising but mostly for fun. If you want to see more
-        website like this, or you have any idea that you want to share, feel free to shoot me a message <a
-          href="#contact">here</a>.
-      </p>
-    </article>
-  </div>
-
-  <footer style="position: absolute; bottom: 0; width: 100%;">
-    <p>Mini World &copy; 2020 by yewyewXD | All Rights Reserved</p>
-  </footer>
-
-  <script src="global.js"></script>
-</body>
-
+    <script src="global.js"></script>
+  </body>
 </html>
