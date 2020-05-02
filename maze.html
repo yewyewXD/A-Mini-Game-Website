@@ -75,7 +75,7 @@
         </div>
       </div>
 
-      <div class="reloadBtn"><span id="reload-btn">Reload Page</span></div>
+      <div class="reloadBtn"><span id="reload-btn">Next Maze</span></div>
 
       <footer style="position: absolute; bottom: 0; width: 100%;">
         <p>Mini World &copy; 2020 by yewyewXD | All Rights Reserved</p>
@@ -203,6 +203,64 @@
           }
           if (handled) evt.preventDefault(); // prevent arrow keys from scrolling the page (supported in IE9+ and all other browsers)
         }
+
+        //mobile -start-
+        var container = document;
+        container.addEventListener("touchstart", startTouch, false);
+        container.addEventListener("touchmove", moveTouch, false);
+
+        // Swipe Up / Down / Left / Right
+        var initialX = null;
+        var initialY = null;
+
+        function startTouch(e) {
+          initialX = e.touches[0].clientX;
+          initialY = e.touches[0].clientY;
+        }
+
+        function moveTouch(e) {
+          if (initialX === null) {
+            return;
+          }
+
+          if (initialY === null) {
+            return;
+          }
+
+          var currentX = e.touches[0].clientX;
+          var currentY = e.touches[0].clientY;
+
+          var diffX = initialX - currentX;
+          var diffY = initialY - currentY;
+
+          if (Math.abs(diffX) > Math.abs(diffY)) {
+            // sliding horizontally
+            if (diffX > 0) {
+              // swiped left
+              m.moveleft("canvas");
+              handled = true;
+            } else {
+              // swiped right
+              m.moveright("canvas");
+              handled = true;
+            }
+          } else {
+            // sliding vertically
+            if (diffY > 0) {
+              // swiped up
+              m.moveup("canvas");
+              handled = true;
+            } else {
+              // swiped down
+              m.movedown("canvas");
+              handled = true;
+            }
+          }
+
+          initialX = null;
+          initialY = null;
+        }
+        // mobile -end-
 
         var dsd = function (size) {
           this.N = size;
