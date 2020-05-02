@@ -1,54 +1,54 @@
-@media(min-width:360px){
-  header{
+@media (min-width: 360px) {
+  header {
     height: 50px;
     width: 100%;
     background: white;
-    #branding{
-      float:left;
-      margin-top:5px;
-      img{
+    #branding {
+      float: left;
+      margin-top: 5px;
+      img {
         height: 50px;
         width: 50px;
-        float:left;
+        float: left;
       }
-      h1{
-        padding-top:3px;
+      h1 {
+        padding-top: 3px;
         font-size: 30px;
-        margin:5px 0 0 0;
-        float:right;
+        margin: 5px 0 0 0;
+        float: right;
       }
     }
 
-    nav{
-      float:right;
+    nav {
+      float: right;
       font-size: 30px;
-      margin:8px 5px 0 0;
+      margin: 5px 5px 0 0;
     }
 
-    #overlay{
+    #overlay {
       width: 100%;
-      position:fixed;
+      position: fixed;
       top: 0px;
-      background:$color1;
+      background: $color1;
       text-align: center;
       height: 0px;
       transition: 0.5s;
-      color:white;
+      color: white;
       font-weight: bolder;
       z-index: 1;
-      #closebtn{
+      #closebtn {
         position: absolute;
         right: 20px;
-        font-size:40px;
-        display:none;
+        font-size: 40px;
+        display: none;
       }
-      ul{
+      ul {
         display: none;
         list-style: none;
         padding: 0;
-        a{
+        a {
           text-decoration: none;
-          color:white;
+          color: white;
           line-height: 2.3em;
         }
       }
