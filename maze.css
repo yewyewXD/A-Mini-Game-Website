@@ -31,11 +31,12 @@
 }
 
 .modal-footer {
-  padding: 5px 10px;
-  background: white;
+  padding: 10px 15px;
+  background: #909fee;
   text-align: center;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 3px;
 }
 
 .reloadBtn {
@@ -45,8 +46,12 @@
 }
 
 #reload-btn {
-  padding: 10px 20px;
-  border: 1px solid black;
+  padding: 10px 15px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  background: #6078ea;
+  border-radius: 3px;
 }
 
 @media (min-width: 360px) {

@@ -1,21 +1,20 @@
-@media(min-width:360px){
-  #showcase{
-    background: url('logo.png') no-repeat 50% 65px;
+@media (min-width: 360px) {
+  #showcase {
+    background: url("logo.png") no-repeat 50% 62px;
     background-size: 200px 200px;
     text-align: center;
     height: 220px;
     font-size: 25px;
     border-bottom: 1px solid $color2;
-    h1{
+    h1 {
       margin-bottom: 20px;
     }
-    a{
-      color:white;
+    a {
+      color: white;
       font-weight: bold;
       line-height: 2em;
-      padding: 1px 5px;
-      border:solid 5px $color1;
-      border-radius: 5px;
+      padding: 10px 20px;
+      border-radius: 3px;
       background: $color1;
       text-decoration: none;
     }

@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini World | Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tictac.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini World | Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="tictac.css">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div id="branding">
-        <img src="logo.png" alt="website logo">
-        <h1>Mini World</h1>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <img src="logo.png" alt="website logo" />
+          <h1>Mini World</h1>
+        </div>
+        <nav>
+          <span id="openbtn">&equiv;</span>
+        </nav>
       </div>
-      <nav>
-        <span id="openbtn">&equiv;</span>
-      </nav>
-    </div>
+
+      <div class="clear"></div>
+
+      <div id="overlay">
+        <span id="closebtn">&times;</span>
+        <ul id="overlay-list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="home.html#games">More Games</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
 
     <div class="clear"></div>
 
-    <div id="overlay">
-      <span id="closebtn">&times;</span>
-      <ul id="overlay-list">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="home.html#games">More Games</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <table>
+      <tr>
+        <td class="cell" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
+      </tr>
+    </table>
+    <div class="endgame">
+      <div class="text"></div>
+      <button onClick="startGame()">Replay</button>
     </div>
-  </header>
 
-  <div class="clear"></div>
+    <footer>
+      <p>Mini World &copy; 2020 by yewyewXD | All Rights Reserved</p>
+    </footer>
 
-  <table>
-    <tr>
-      <td class="cell" id="0"></td>
-      <td class="cell" id="1"></td>
-      <td class="cell" id="2"></td>
-    </tr>
-    <tr>
-      <td class="cell" id="3"></td>
-      <td class="cell" id="4"></td>
-      <td class="cell" id="5"></td>
-    </tr>
-    <tr>
-      <td class="cell" id="6"></td>
-      <td class="cell" id="7"></td>
-      <td class="cell" id="8"></td>
-    </tr>
-  </table>
-  <div class="endgame">
-    <div class="text"></div>
-    <button onClick="startGame()">replay</button>
-  </div>
-
-  <footer>
-    <p>Mini World &copy; 2020 by yewyewXD | All Rights Reserved</p>
-  </footer>
-
-  <script src="global.js"></script>
-  <script src="tictac.js"></script>
-</body>
-
+    <script src="global.js"></script>
+    <script src="tictac.js"></script>
+  </body>
 </html>
