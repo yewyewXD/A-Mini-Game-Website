@@ -20,19 +20,25 @@ const game = () => {
     const computerHand = document.querySelector(".computer-hand");
     const hands = document.querySelectorAll(".hands img");
 
-    hands.forEach(hand => {
+    hands.forEach((hand) => {
       hand.addEventListener("animationend", function () {
         this.style.animation = "";
       });
     });
     //Computer Options
     const computerOptions = ["rock", "paper", "scissors"];
-
-    options.forEach(option => {
+    let computerChoice;
+    options.forEach((option) => {
       option.addEventListener("click", function () {
         //Computer Choice
-        const computerNumber = Math.floor(Math.random() * 3);
-        const computerChoice = computerOptions[computerNumber];
+        let computerChoice = "";
+        if (this.textContent === "paper") {
+          computerChoice = "scissors";
+        } else if (this.textContent === "rock") {
+          computerChoice = "paper";
+        } else if (this.textContent === "scissors") {
+          computerChoice = "rock";
+        }
 
         setTimeout(() => {
           //Here is where we call compare hands
@@ -94,7 +100,7 @@ const game = () => {
     //Check for Scissors
     if (playerChoice === "scissors") {
       if (computerChoice === "rock") {
-        winner.textContent = "You lose the round";
+        winner.textContent = "Too easy for me";
         cScore++;
         updateScore();
         return;
