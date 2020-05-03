@@ -1,83 +1,82 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini World | Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="rockpaper.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini World | Rock Paper Scissors</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="rockpaper.css">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <header>
-    <div class="container">
-      <div id="branding">
-        <img src="logo.png" alt="website logo">
-        <h1>Mini World</h1>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <img src="logo.png" alt="website logo" />
+          <h1>Mini World</h1>
+        </div>
+        <nav>
+          <span id="openbtn">&equiv;</span>
+        </nav>
       </div>
-      <nav>
-        <span id="openbtn">&equiv;</span>
-      </nav>
-    </div>
+
+      <div class="clear"></div>
+
+      <div id="overlay">
+        <span id="closebtn">&times;</span>
+        <ul id="overlay-list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="home.html#games">More Games</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
 
     <div class="clear"></div>
 
-    <div id="overlay">
-      <span id="closebtn">&times;</span>
-      <ul id="overlay-list">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="home.html#games">More Games</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <div class="clear"></div>
-
-
-  <section class="game">
-    <div class="score">
-      <div class="player-score">
-        <h2>You</h2>
-        <p>0</p>
+    <section class="game">
+      <div class="score">
+        <div class="player-score">
+          <h2>You</h2>
+          <p>0</p>
+        </div>
+        <div class="computer-score">
+          <h2>Bot</h2>
+          <p>0</p>
+        </div>
       </div>
-      <div class="computer-score">
-        <h2>Bot</h2>
-        <p>0</p>
+
+      <div class="intro">
+        <h1>Rock Paper and Scissors</h1>
+        <button>Let's Play</button>
       </div>
-    </div>
 
-    <div class="intro">
-      <h1>Rock Paper and Scissors</h1>
-      <button>Let's Play</button>
-    </div>
-
-    <div class="match fadeOut">
-      <h2 class="winner">Choose an option</h2>
-      <div class="hands">
-        <img class="player-hand" src="rock.png" alt="" />
-        <img class="computer-hand" src="rock.png" alt="" />
+      <div class="match fadeOut">
+        <h2 class="winner">Choose an option</h2>
+        <div class="hands">
+          <img class="player-hand" src="rock.png" alt="" />
+          <img class="computer-hand" src="rock.png" alt="" />
+        </div>
+        <div class="options">
+          <button class="rock">rock</button>
+          <button class="paper">paper</button>
+          <button class="scissors">scissors</button>
+        </div>
       </div>
-      <div class="options">
-        <button class="rock">rock</button>
-        <button class="paper">paper</button>
-        <button class="scissors">scissors</button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>Mini World &copy; 2020 by yewyewXD | All Rights Reserved</p>
-  </footer>
+    <footer>
+      <p>Mini World &copy; 2020 by yewyewXD | All Rights Reserved</p>
+    </footer>
 
-  <script src="global.js"></script>
-  <script src="rockpaper.js"></script>
-</body>
-
+    <script src="global.js"></script>
+    <script src="rockpaper.js"></script>
+  </body>
 </html>
