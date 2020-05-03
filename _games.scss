@@ -9,11 +9,12 @@
       border: 1px solid $color3;
     }
     #boxes {
-      height: 500px;
+      height: 650px;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       flex-direction: column;
+      margin-bottom: -150px;
     }
     .box {
       width: 70%;
@@ -22,7 +23,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      #snake {
+      #snakes {
         display: none;
       }
       img {
@@ -41,6 +42,7 @@
     #boxes {
       height: 250px;
       flex-direction: row;
+      margin: 0;
     }
   }
 }
@@ -53,7 +55,7 @@
           opacity: 0.7;
         }
       }
-      #snake {
+      #snakes {
         display: block;
       }
     }

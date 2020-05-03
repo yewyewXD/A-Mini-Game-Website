@@ -14,7 +14,7 @@ html {
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 768px) {
   body {
     font-size: 20px;
   }
@@ -259,7 +259,7 @@ html {
     border: 1px solid #9dabef;
   }
   #games #boxes {
-    height: 500px;
+    height: 650px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -273,6 +273,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: -150px;
   }
   #games .box {
     width: 70%;
@@ -291,7 +292,7 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #games .box #snake {
+  #games .box #snakes {
     display: none;
   }
   #games .box img {
@@ -311,6 +312,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 0;
   }
 }
 
@@ -321,7 +323,7 @@ html {
   #games .box .game:hover {
     opacity: 0.7;
   }
-  #games .box #snake {
+  #games .box #snakes {
     display: block;
   }
 }
