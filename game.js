@@ -12,6 +12,10 @@ document.getElementById("maze").addEventListener("click", () => {
   location.href = "maze.html";
 });
 
-document.getElementById("snake").addEventListener("click", () => {
-  location.href = "snake.html";
-});
+try {
+  document.getElementById("snake").addEventListener("click", () => {
+    location.href = "snake.html";
+  });
+} catch {
+  console.log("snake is not running");
+}

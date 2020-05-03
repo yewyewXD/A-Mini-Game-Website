@@ -65,6 +65,9 @@ footer {
 }
 
 @media (min-width: 320px) {
+  #overlay-list li:first-child {
+    margin-top: 15px;
+  }
   /*before end*/
   #wrapper {
     margin: auto;
@@ -126,6 +129,9 @@ footer {
   }
 }
 @media (min-width: 768px) {
+  #overlay-list li:first-child {
+    margin-top: 30px;
+  }
   #heading h1 {
     font-size: 50px;
   }
