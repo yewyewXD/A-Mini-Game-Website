@@ -9,6 +9,7 @@ body {
   font-size: 18px;
   font-weight: bold;
   font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
   clear: both;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   header {
     height: 50px;
     width: 100%;
@@ -78,7 +79,29 @@ body {
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 768px) {
+  header {
+    height: 60px;
+  }
+  header #branding {
+    margin-top: 10px;
+  }
+  header nav {
+    margin: 10px 5px 0 0;
+  }
+  header #overlay {
+    font-size: 22px;
+  }
+  header #overlay #closebtn {
+    right: 40px;
+    font-size: 50px;
+  }
+  header #overlay ul a {
+    line-height: 2.7em;
+  }
+}
+
+@media (min-width: 320px) {
   #showcase {
     background: url("logo.png") no-repeat 50% 62px;
     background-size: 200px 200px;
@@ -101,30 +124,42 @@ body {
   }
 }
 
-#about {
-  height: 130px;
-  text-align: none;
-  background: #c2c9f3;
-  border-bottom: solid 1px #909fee;
+@media (min-width: 768px) {
+  #showcase {
+    height: 300px;
+    font-size: 28px;
+    background: url("logo.png") no-repeat 50% 93px;
+    background-size: 220px 220px;
+  }
+  #showcase h1 {
+    margin: 50px 0 70px 0;
+  }
 }
 
-#about p {
-  font-size: 25px;
-  margin: 20px 0 10px 0;
+@media (min-width: 320px) {
+  #about {
+    height: 130px;
+    text-align: none;
+    background: #c2c9f3;
+    border-bottom: solid 1px #909fee;
+  }
+  #about p {
+    font-size: 25px;
+    margin: 20px 0 10px 0;
+  }
+  #about a {
+    line-height: 1.7em;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: #909fee;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+    font-weight: bolder;
+  }
 }
 
-#about a {
-  line-height: 1.7em;
-  text-decoration: none;
-  padding: 10px 15px;
-  background: #909fee;
-  text-align: center;
-  color: white;
-  border-radius: 3px;
-  font-weight: bolder;
-}
-
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   #games {
     text-align: center;
   }
@@ -181,7 +216,7 @@ body {
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   footer {
     height: 50px;
     font-size: 15px;

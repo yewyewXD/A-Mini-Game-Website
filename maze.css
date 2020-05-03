@@ -64,7 +64,7 @@ footer {
   width: 100%;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   /*before end*/
   #wrapper {
     margin: auto;
@@ -79,16 +79,15 @@ footer {
   }
 
   #heading hr {
-    width: 150px;
+    border: 1px solid #909fee;
+    width: 140px;
     margin: auto;
-    margin-bottom: 20px;
   }
 
   #advice {
-    display: none;
     text-align: center;
-    margin: 10px 0;
     font-size: 20px;
+    margin: 10px 0;
   }
 
   #c {

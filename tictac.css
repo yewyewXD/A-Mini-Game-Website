@@ -1,10 +1,10 @@
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   table {
     display: flex;
     align-items: center;
     justify-content: center;
     border-collapse: collapse;
-    margin-top: 160px;
+    margin-top: 120px;
   }
 
   td {

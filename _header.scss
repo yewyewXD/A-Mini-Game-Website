@@ -1,4 +1,4 @@
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   header {
     height: 50px;
     width: 100%;
@@ -50,6 +50,29 @@
           text-decoration: none;
           color: white;
           line-height: 2.3em;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  header {
+    height: 60px;
+    #branding {
+      margin-top: 10px;
+    }
+    nav {
+      margin: 10px 5px 0 0;
+    }
+    #overlay {
+      font-size: 22px;
+      #closebtn {
+        right: 40px;
+        font-size: 50px;
+      }
+      ul {
+        a {
+          line-height: 2.7em;
         }
       }
     }

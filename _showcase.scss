@@ -1,4 +1,4 @@
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   #showcase {
     background: url("logo.png") no-repeat 50% 62px;
     background-size: 200px 200px;
@@ -17,6 +17,17 @@
       border-radius: 3px;
       background: $color1;
       text-decoration: none;
+    }
+  }
+}
+@media (min-width: 768px) {
+  #showcase {
+    height: 300px;
+    font-size: 28px;
+    background: url("logo.png") no-repeat 50% 93px;
+    background-size: 220px 220px;
+    h1 {
+      margin: 50px 0 70px 0;
     }
   }
 }
