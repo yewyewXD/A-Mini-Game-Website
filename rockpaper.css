@@ -176,3 +176,9 @@
     font-size: 50px;
   }
 }
+@media (min-width: 1024px) {
+  button:hover {
+    opacity: 0.9;
+    border: 1px solid white;
+  }
+}

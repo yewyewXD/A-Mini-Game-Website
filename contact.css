@@ -81,3 +81,11 @@
     margin-top: 10px;
   }
 }
+@media (min-width: 1024px) {
+  form button:hover {
+    cursor: pointer;
+    line-height: 1.1em;
+    border: solid 1px white;
+    opacity: 0.8;
+  }
+}

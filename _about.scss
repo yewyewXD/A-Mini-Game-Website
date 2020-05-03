@@ -16,7 +16,7 @@
       text-align: center;
       color: white;
       border-radius: 3px;
-      font-weight: bolder;
+      font-weight: bold;
     }
   }
 }
@@ -25,6 +25,19 @@
     padding-left: 40px;
     p {
       margin: 25px 0 15px 0;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  #about {
+    text-align: center;
+    padding: 0;
+    p {
+      margin-bottom: 20px;
+    }
+    a:hover {
+      border: 1px solid white;
+      opacity: 0.8;
     }
   }
 }

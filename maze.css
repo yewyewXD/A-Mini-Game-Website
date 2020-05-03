@@ -89,6 +89,9 @@ footer {
     font-size: 20px;
     margin: 10px 0;
   }
+  #advice::before {
+    content: "- Swipe to move! -";
+  }
 
   #c {
     background: #eeeeee;
@@ -144,5 +147,21 @@ footer {
   footer {
     position: unset;
     margin-top: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .modal {
+    height: 800px;
+  }
+  #advice::before {
+    content: "- Find the way out in 30 seconds! -";
+  }
+  #reload-btn:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    opacity: 0.9;
+  }
+  .modal-footer:hover {
+    background: none;
   }
 }

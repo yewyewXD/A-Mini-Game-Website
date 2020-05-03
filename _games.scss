@@ -22,6 +22,9 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      #snake {
+        display: none;
+      }
       img {
         width: 100px;
         height: 100px;
@@ -31,9 +34,6 @@
         margin: 5px 0;
       }
     }
-    .pc-game {
-      display: none;
-    }
   }
 }
 @media (min-width: 768px) {
@@ -41,6 +41,21 @@
     #boxes {
       height: 250px;
       flex-direction: row;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  #games {
+    .box {
+      .game {
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      #snake {
+        display: block;
+      }
     }
   }
 }

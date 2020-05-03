@@ -31,3 +31,11 @@
     }
   }
 }
+@media (min-width: 1024px) {
+  #showcase {
+    a:hover {
+      border: 2px solid white;
+      opacity: 0.8;
+    }
+  }
+}
