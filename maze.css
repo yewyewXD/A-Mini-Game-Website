@@ -3,9 +3,9 @@
   margin: 0;
 }
 
-body {
+/* body {
   overflow: hidden;
-}
+} */
 
 /* The Modal (background) */
 .modal {
@@ -120,5 +120,29 @@ footer {
   /*after end*/
   .modal {
     font-size: 23px;
+  }
+}
+@media (min-width: 768px) {
+  #heading h1 {
+    font-size: 50px;
+  }
+
+  #heading hr {
+    width: 160px;
+  }
+  #advice {
+    margin: 20px 0;
+  }
+  #canvas {
+    width: 400px;
+  }
+  #c {
+    display: block;
+    margin: auto;
+    width: 85%;
+  }
+  footer {
+    position: unset;
+    margin-top: 40px;
   }
 }

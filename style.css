@@ -2,14 +2,22 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #dbdef5;
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "Josefin Sans", sans-serif;
-  overflow-x: hidden;
+@media (min-width: 320px) {
+  body {
+    background: #dbdef5;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 320px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 .container {
@@ -159,6 +167,15 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  #about {
+    padding-left: 40px;
+  }
+  #about p {
+    margin: 25px 0 15px 0;
+  }
+}
+
 @media (min-width: 320px) {
   #games {
     text-align: center;
@@ -216,10 +233,37 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  #games #boxes {
+    height: 250px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 @media (min-width: 320px) {
   footer {
     height: 50px;
     font-size: 15px;
+    background: #909fee;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 60px;
+    font-size: 21px;
     background: #909fee;
     display: -webkit-box;
     display: -ms-flexbox;

@@ -36,3 +36,11 @@
     }
   }
 }
+@media (min-width: 768px) {
+  #games {
+    #boxes {
+      height: 250px;
+      flex-direction: row;
+    }
+  }
+}

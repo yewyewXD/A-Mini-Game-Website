@@ -35,6 +35,10 @@
     padding-right: 50px;
   }
 
+  form textarea {
+    font-family: "Josefin Sans", sans-serif;
+  }
+
   form button {
     padding: 5px 10px;
     border: none;
@@ -46,5 +50,34 @@
 
   footer {
     margin-top: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .form-head h1 {
+    font-size: 50px;
+  }
+  .form-head hr {
+    width: 130px;
+  }
+  label {
+    font-size: 25px;
+  }
+  form input {
+    height: 25px;
+    width: 250px;
+  }
+  form select {
+    height: 32px;
+    width: 256px;
+  }
+  form textarea {
+    width: 250px;
+    font-size: 18px;
+    height: 80px;
+  }
+  form button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
   }
 }

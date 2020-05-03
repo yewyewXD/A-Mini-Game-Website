@@ -5,14 +5,21 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: $color6;
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "Josefin Sans", sans-serif;
-  overflow-x: hidden;
+@media (min-width: 320px) {
+  body {
+    background: $color6;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 320px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 .container {

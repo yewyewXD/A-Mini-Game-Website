@@ -1,0 +1,33 @@
+@media (min-width: 320px) {
+  article {
+    font-size: 20px;
+  }
+
+  article p {
+    padding: 15px;
+  }
+  article h1 {
+    text-align: center;
+    margin: 20px 0 5px 0;
+    font-size: 40px;
+  }
+  article hr {
+    margin: auto;
+    border: solid 1px #909fee;
+    width: 130px;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 768px) {
+  article {
+    font-size: 22px;
+  }
+  article p {
+    padding: 20px;
+  }
+  footer {
+    margin: 0;
+  }
+}
