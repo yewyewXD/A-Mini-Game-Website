@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 /* The Modal (background) */
 .modal {
   overflow: hidden;
@@ -54,6 +58,12 @@
   border-radius: 3px;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 @media (min-width: 360px) {
   /*before end*/
   #wrapper {
@@ -74,6 +84,7 @@
   }
 
   #advice {
+    display: none;
     text-align: center;
     margin: 10px 0;
     font-size: 20px;
@@ -81,7 +92,7 @@
 
   #c {
     background: #eeeeee;
-    display: block;
+    display: none;
     height: 25px;
     font-size: 25px;
     padding: 5px 0;
@@ -96,6 +107,8 @@
     width: 300px;
   }
   #timerel {
+    margin: auto;
+    width: 85%;
     background: #eeeeee;
     font-size: 25px;
     display: block;
