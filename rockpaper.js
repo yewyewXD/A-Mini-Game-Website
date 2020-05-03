@@ -26,8 +26,6 @@ const game = () => {
       });
     });
     //Computer Options
-    const computerOptions = ["rock", "paper", "scissors"];
-    let computerChoice;
     options.forEach((option) => {
       option.addEventListener("click", function () {
         //Computer Choice
@@ -69,6 +67,28 @@ const game = () => {
       winner.textContent = "It is a tie";
       return;
     }
+    //List of insulting
+    const loserOptions = [
+      "That's all you got?",
+      "Try again, noob",
+      "Too easy for me",
+      "?",
+      "Are you even trying?",
+      "Ops, you lose",
+      "You can do better",
+      "You'll never beat me",
+      "Not today",
+      "Cry baby, cry",
+      "What's up human?",
+      "You suck at this game",
+      "I can do this all day",
+      "Loser LMAO",
+      "How many time do you wanna lose?",
+      "This is MY game, noob",
+    ];
+    let random = Math.floor(Math.random() * loserOptions.length);
+    let loserChoice = loserOptions[random];
+
     //Check for Rock
     if (playerChoice === "rock") {
       if (computerChoice === "scissors") {
@@ -77,7 +97,7 @@ const game = () => {
         updateScore();
         return;
       } else {
-        winner.textContent = "That's all you got?";
+        winner.textContent = loserChoice;
         cScore++;
         updateScore();
         return;
@@ -86,7 +106,7 @@ const game = () => {
     //Check for Paper
     if (playerChoice === "paper") {
       if (computerChoice === "scissors") {
-        winner.textContent = "Try again, noob";
+        winner.textContent = loserChoice;
         cScore++;
         updateScore();
         return;
@@ -100,12 +120,12 @@ const game = () => {
     //Check for Scissors
     if (playerChoice === "scissors") {
       if (computerChoice === "rock") {
-        winner.textContent = "Too easy for me";
+        winner.textContent = loserChoice;
         cScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "You win the round!";
+        winner.textContent = "Finally you win!";
         pScore++;
         updateScore();
         return;
