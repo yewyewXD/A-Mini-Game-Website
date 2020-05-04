@@ -325,6 +325,10 @@ html {
   #games .box .game {
     cursor: pointer;
   }
+  #games .box .game h5 {
+    margin: 0;
+    font-weight: normal;
+  }
   #games .box .game:hover {
     opacity: 0.7;
   }
