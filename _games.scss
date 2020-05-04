@@ -41,6 +41,7 @@
   #games {
     #boxes {
       height: 250px;
+      width: 900px;
       flex-direction: row;
       margin: 0;
     }
@@ -48,6 +49,10 @@
 }
 @media (min-width: 1024px) {
   #games {
+    #boxes {
+      padding: 0;
+      width: 900px;
+    }
     .box {
       .game {
         cursor: pointer;

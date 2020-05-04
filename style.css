@@ -308,6 +308,7 @@ html {
 @media (min-width: 768px) {
   #games #boxes {
     height: 250px;
+    width: 900px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -317,6 +318,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+  #games #boxes {
+    padding: 0;
+    width: 900px;
+  }
   #games .box .game {
     cursor: pointer;
   }

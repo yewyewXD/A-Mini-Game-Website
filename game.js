@@ -12,10 +12,10 @@ document.getElementById("maze").addEventListener("click", () => {
   location.href = "maze.html";
 });
 
-try {
-  document.getElementById("snake").addEventListener("click", () => {
+if (document.body.offsetWidth >= 1024) {
+  document.getElementById("snakes").addEventListener("click", () => {
     location.href = "snake.html";
   });
-} catch {
-  console.log("snake is not running");
+} else {
+  console.log("snake is not working");
 }
