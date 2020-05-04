@@ -35,6 +35,12 @@
         margin: 5px 0;
       }
     }
+    .game {
+      h5 {
+        margin: 0;
+        font-weight: normal;
+      }
+    }
   }
 }
 @media (min-width: 768px) {
@@ -55,10 +61,6 @@
     }
     .box {
       .game {
-        h5 {
-          margin: 0;
-          font-weight: normal;
-        }
         cursor: pointer;
         &:hover {
           opacity: 0.7;

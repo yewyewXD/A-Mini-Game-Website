@@ -303,6 +303,10 @@ html {
   #games .box p {
     margin: 5px 0;
   }
+  #games .game h5 {
+    margin: 0;
+    font-weight: normal;
+  }
 }
 
 @media (min-width: 768px) {
@@ -325,10 +329,6 @@ html {
   #games .box .game {
     cursor: pointer;
   }
-  #games .box .game h5 {
-    margin: 0;
-    font-weight: normal;
-  }
   #games .box .game:hover {
     opacity: 0.7;
   }
@@ -342,6 +342,7 @@ html {
     height: 50px;
     font-size: 15px;
     background: #909fee;
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
