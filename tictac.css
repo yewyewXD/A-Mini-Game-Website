@@ -1,10 +1,19 @@
 @media (min-width: 320px) {
+  .heading h1 {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  .heading hr {
+    width: 100px;
+    border: 1px solid #909fee;
+    margin: 0 auto;
+  }
   table {
     display: flex;
     align-items: center;
     justify-content: center;
     border-collapse: collapse;
-    margin-top: 120px;
+    margin-top: 60px;
   }
 
   td {
@@ -73,6 +82,9 @@
   }
 }
 @media (min-width: 1024px) {
+  table {
+    margin-top: 100px;
+  }
   .endgame button:hover {
     cursor: pointer;
     background: none;
