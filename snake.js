@@ -69,6 +69,7 @@ function direction(event) {
     d = "DOWN";
     // down.play();
   }
+  event.preventDefault();
 }
 
 // cheack collision function
@@ -87,7 +88,7 @@ function draw() {
   ctx.drawImage(ground, 0, 0);
 
   for (let i = 0; i < snake.length; i++) {
-    ctx.fillStyle = i == 0 ? "green" : "white";
+    ctx.fillStyle = i == 0 ? "#6078ea" : "white";
     ctx.fillRect(snake[i].x, snake[i].y, box, box);
 
     ctx.strokeStyle = "red";
@@ -128,6 +129,12 @@ function draw() {
   };
 
   // game over
+  const endDisplay = document.getElementById("end-display");
+  const replay = document.getElementById("replay-btn");
+  const urScore = document.getElementById("score");
+  replay.addEventListener("click", () => {
+    document.location.reload();
+  });
 
   if (
     snakeX < box ||
@@ -137,8 +144,11 @@ function draw() {
     collision(newHead, snake)
   ) {
     clearInterval(game);
-    console.log("dead");
-    console.log(score);
+    endDisplay.style.display = "flex";
+    urScore.innerText = "Your Score is: " + score;
+    setTimeout(() => {
+      endDisplay.style.opacity = "0.9";
+    }, 100);
   }
 
   snake.unshift(newHead);
@@ -150,4 +160,4 @@ function draw() {
 
 // call draw function every 100 ms
 
-let game = setInterval(draw, 150);
+let game = setInterval(draw, 50);
