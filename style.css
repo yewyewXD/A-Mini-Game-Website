@@ -320,7 +320,7 @@ html {
 @media (min-width: 1024px) {
   #games #boxes {
     padding: 0;
-    width: 900px;
+    width: 100%;
   }
   #games .box .game {
     cursor: pointer;
