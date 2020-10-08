@@ -17,7 +17,7 @@ Completed on: 4 May 2020 <br>
 
 ![Tic Tac Toe](https://github.com/yewyewXD/A-Mini-Game-Website/blob/master/readme-images/tictactoe.JPG?raw=true "Tic Tac Toe")
 
-![Rock Paper Scissors](https://github.com/yewyewXD/A-Mini-Game-Website/blob/master/readme-images/rockpaperscissors.JPG?raw=true "Rock Paper Scissors")
+![Rock Paper Scissors](https://github.com/yewyewXD/A-Mini-Game-Website/blob/master/readme-images/rockpaperscisscors.JPG?raw=true "Rock Paper Scissors")
 
 ![Maze](https://github.com/yewyewXD/A-Mini-Game-Website/blob/master/readme-images/maze.JPG?raw=true "Maze")
 
