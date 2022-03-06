@@ -6,8 +6,6 @@ A mini game website which includes Tic Tac Toe, Rock Paper Scissors, Maze, and S
 
 ## Build status
 
-**Success:** [See Live](https://miniworld.netlify.app/)
-
 Started on: 21 Apr 2020 <br>
 Completed on: 4 May 2020 <br>
 
